@@ -2,7 +2,7 @@ const hrs = document.getElementById("hrs");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
 
-setInterval(()=>{
+window.setInterval(()=>{
     let currentTime = new Date();
 
     hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
